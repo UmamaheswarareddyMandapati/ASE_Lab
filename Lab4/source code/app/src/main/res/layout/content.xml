@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textEmailAddress"
+        android:ems="10"
+        android:id="@+id/txt_uname"
+        android:hint="Email"
+        android:textColorHint="@color/colorMain"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="45dp"
+        android:textColor="@color/colorMain"/>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:ems="10"
+        android:id="@+id/txt_Pwd"
+        android:hint="Password"
+        android:textColorHint="@color/colorMain"
+        android:textColor="@color/colorMain"
+        android:layout_below="@+id/txt_uname"
+        android:layout_alignLeft="@+id/txt_uname"
+        android:layout_alignStart="@+id/txt_uname"
+        android:layout_marginTop="31dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sign in"
+        android:id="@+id/btn_login"
+        android:layout_below="@+id/txt_Pwd"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="45dp"
+        android:onClick="checkCredentials"
+        android:background="@color/colorAccent"
+        android:textColor="@color/colorMain"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Please enter valid username and password"
+        android:id="@+id/lbl_Error"
+        android:layout_marginTop="38dp"
+        android:visibility="invisible"
+        android:textColor="@color/colorMain"
+        android:singleLine="false"
+        android:layout_below="@+id/btn_login"
+        android:layout_centerHorizontal="true" />
+
+    <TextView android:id="@+id/link_signup"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="24dp"
+        android:text="No account yet? Create one"
+        android:gravity="center"
+        android:layout_alignBottom="@id/lbl_Error"
+        android:textSize="16dip"
+        android:textColor="@color/colorMain"
+        android:onClick="signUp" />
+</RelativeLayout>
