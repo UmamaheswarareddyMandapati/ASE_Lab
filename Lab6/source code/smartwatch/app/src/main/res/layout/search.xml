@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@mipmap/wallpaper"
+    android:orientation="vertical"
+    android:weightSum="1"
+    android:layout_height="200dp"
+    app:layout_collapseParallaxMultiplier="0.5">
+
+    <EditText
+        android:id="@+id/txt_search"
+        android:layout_width="76dp"
+        android:textSize="10dp"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dp"
+        android:ems="10"
+        android:hint="Search"
+        android:inputType="textEmailAddress"
+        android:textColorHint="@color/colorMain"
+        android:textAppearance="@style/TextAppearance.AppCompat"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:id="@+id/clickme"
+        android:layout_width="wrap_content"
+        android:layout_height="14dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="5dp"
+        android:textSize="10dp"
+        android:layout_marginTop="5dp"
+        android:background="@color/colorAccent"
+        android:text="click"
+        android:textAppearance="@style/TextAppearance.AppCompat" />
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp">
+
+    </TableRow>
+
+    <TextView
+        android:id="@+id/tv1"
+        android:layout_height="15dp"
+        android:layout_gravity="center_horizontal"
+        android:text="zipf:"
+        android:textSize="10dp"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@color/colorMain"
+        android:layout_width="124dp" />
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp">
+
+        <TextView
+            android:id="@+id/tv2"
+            android:layout_width="130dp"
+            android:layout_height="15dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="1"
+            android:textSize="8dp"
+            android:text="perMillion:"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/colorMain" />
+
+        <TextView
+            android:id="@+id/textlabel"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:gravity="center"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="@color/colorMain" />
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp">
+
+    </TableRow>
+
+</LinearLayout>
