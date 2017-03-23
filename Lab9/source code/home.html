@@ -1,0 +1,81 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title>Image Tags and Text to Speech</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <script src="clarifai.js"></script>
+    <script src="keys.js"></script>
+    <!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+    <!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
+</head>
+<body>
+
+<!-- Header -->
+<header id="header">
+    <h3 align="center">Retrieving image tags and text to speech</h3>
+    <p align="center">Please enter the image url in the below text box and click get tags button.</p>
+</header>
+
+
+<div>
+    <input type="text" id="imgurl"  placeholder="Image URL"/><br>
+    <button onclick="run(document.getElementById('imgurl').value)">Get tags!</button>
+
+
+
+</div>
+<br />
+
+
+
+
+
+
+
+<table align="center"  width="1200" height="200" border="0" cellpadding="5">
+    <tr>
+
+        <td align="center" valign="center">
+            <div id="data_bef_img"></div>
+            <br />
+
+        </td>
+        <td align="center" valign="center">
+            <div id="check"></div>
+            <br />
+        </td>
+
+
+
+    </tr>
+    <tr>
+        <td align="center" valign="center">
+            <h3><b><div id="data_for_img"></div></b></h3>
+            <br />
+
+        </td>
+        <td align="center" valign="center">
+            <div id="tags"></div>
+            <br />
+        </td>
+
+
+
+
+
+    </tr>
+
+
+</table>
+
+
+<!-- Scripts -->
+<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+<script src="assets/js/main.js"></script>
+
+</body>
+</html>
