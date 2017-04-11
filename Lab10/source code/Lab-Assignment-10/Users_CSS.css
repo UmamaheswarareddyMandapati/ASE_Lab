@@ -1,0 +1,50 @@
+.h1{
+    background-image: url("wallpaper1.jpg");
+    background-size: cover;
+    color: lemonchiffon;
+    font-family: "Comic Sans MS";
+    font-size: large;
+}
+.g1{
+    /*background-color: orange;*/
+    color: black;
+    margin-left: 40px;
+    margin-right: 120px;
+}
+.h5{
+    margin-left: 10px;
+}
+.i1{
+    background-color: black;
+    border: none;
+    color: white;
+    padding: 8px 16px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 13px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+.textbox2{
+    border-style: solid;
+    border-color: orange;
+    font-size:13pt;
+    height:20px;
+    width:300px;
+}
+.textbox1{
+    border-style: solid;
+    border-color: orange;
+    font-size:13pt;
+    height:20px;
+    width:300px;
+}
+.fl1{
+    float: left;
+    margin-left: 40px;
+}
+.fl2{
+    float: right;
+    margin-right: 60px;
+}
